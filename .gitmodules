@@ -7,3 +7,6 @@
 [submodule "bundle/sh"]
 	path = bundle/sh
 	url = https://github.com/vim-scripts/sh.vim.git
+[submodule "bundle/haskell"]
+	path = bundle/haskell
+	url = https://github.com/vim-scripts/haskell.vim.git
