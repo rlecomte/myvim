@@ -1,0 +1,14 @@
+--langdef=groovy
+--langmap=groovy:.groovy
+--regex-groovy=/^[ \t][(private|public|protected) ( \t)][A-Za-z0-9<>]+[ \t]+([A-Za-z0-9]+)[ \t](.)[ \t]\{/\1/f,function,functions/
+--regex-groovy=/^[ \t]*def[ \t]+([A-Za-z0-9_]+)[ \t]\=[ \t]\{/\1/f,function,functions/
+--regex-groovy=/^[ \t]*private def[ \t]+([A-Za-z0-9_]+)[ \t]/\1/v,private,private variables/
+--regex-groovy=/^[ \t]def[ \t]+([A-Za-z0-9_]+)[ \t]/\1/u,public,public variables/
+--regex-groovy=/^[ \t][abstract ( \t)][(private|public) ( \t)]class[ \t]+([A-Za-z0-9_]+)[ \t]/\1/c,class,classes/
+--regex-groovy=/^[ \t][abstract ( \t)][(private|public) ( \t)]enum[ \t]+([A-Za-z0-9_]+)[ \t]/\1/c,class,classes/
+
+--langdef=XSD
+--langmap=XSD:.xsd
+--regex-XSD=/^\s*<.*element.+name=["']([a-zA-Z0-9_-]+)["']/\1/e,element/
+--regex-XSD=/^\s*<.*complexType.+name=["']([a-zA-Z0-9_-]+)["']/\1/c,complexType/
+--regex-XSD=/^\s*<.*simpleType.+name=["']([a-zA-Z0-9_-]+)["']/\1/s,simpleType/
