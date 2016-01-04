@@ -1,1 +1,1 @@
-autocmd FileType hs source ~/.vim/bundle/sh/indent/sh.vim
+autocmd FileType hs source ~/.vim/bundle/haskell/syntax/haskell.vim
