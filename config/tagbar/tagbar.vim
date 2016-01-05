@@ -1,6 +1,3 @@
-map <F5> :!ctags -R 
-nmap <F8> :TagbarToggle<CR>
-
 set tags=./tags;
 
 let g:tagbar_type_xsd = {
