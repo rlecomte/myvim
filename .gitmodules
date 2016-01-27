@@ -34,3 +34,6 @@
 [submodule "/home/romarin/.vim/bundle/vim-go"]
 	path = /home/romarin/.vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/ycm"]
+	path = bundle/ycm
+	url = https://github.com/Valloric/YouCompleteMe.git
