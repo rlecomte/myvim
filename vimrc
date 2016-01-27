@@ -9,3 +9,4 @@ runtime! config/**/*.vim
 nmap <F7> :NERDTree<CR>
 nmap <F8> :TagbarToggle<CR>
 
+filetype plugin indent on
