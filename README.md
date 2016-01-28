@@ -10,6 +10,6 @@ git submodule init && git submodule update
 ## YouCompleteMe install
 
 For go autocomplete support you have to run :
-bundle/ycm/install.py --gocode-completer inside
+bundle/ycm/install.py --gocode-completer
 
 
